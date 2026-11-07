@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#17112d">
+    <title>365 Days With You</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sky" aria-hidden="true">
+        <div class="aurora aurora-one"></div>
+        <div class="aurora aurora-two"></div>
+        <div id="stars" class="stars"></div>
+    </div>
+
+    <header class="floating-player" aria-label="Background music player">
+        <button class="icon-button" id="musicToggle" type="button" aria-label="Play background music" disabled>
+            <span id="musicIcon">▶</span>
+        </button>
+        <div class="track">
+            <span id="musicLabel">A song for the moment</span>
+            <input id="volumeControl" type="range" min="0" max="1" step="0.05" value="0.5" aria-label="Music volume">
+        </div>
+        <audio id="backgroundMusic" preload="none"></audio>
+        <span class="music-status" id="musicStatus">Music will be ready here</span>
+    </header>
+
+    <main>
+        <section class="section hero active" id="welcome" data-section>
+            <div class="section-inner welcome-inner">
+                <p class="eyebrow reveal">A small celebration, made just for you</p>
+                <h1 class="hero-title reveal" id="siteTitle">365 Days With You <span>✨</span></h1>
+                <p class="hero-subtitle reveal" id="introText"></p>
+                <button class="primary-button reveal" type="button" data-go="envelope">
+                    Begin the little journey <span>→</span>
+                </button>
+            </div>
+            <button class="scroll-cue" type="button" data-go="envelope" aria-label="Continue">
+                <span></span>
+            </button>
+        </section>
+
+        <section class="section envelope-section" id="envelope" data-section>
+            <div class="section-inner">
+                <p class="eyebrow">First, one small surprise</p>
+                <button class="envelope-wrap" id="envelopeButton" type="button" aria-label="Open the envelope">
+                    <span class="envelope">
+                        <span class="envelope-back"></span>
+                        <span class="letter-card">
+                            <span class="letter-heart">✦</span>
+                            <span id="envelopeText"></span>
+                        </span>
+                        <span class="envelope-front"></span>
+                        <span class="envelope-flap"></span>
+                        <span class="seal">365</span>
+                    </span>
+                </button>
+                <p class="section-hint" id="envelopeHint">Tap the envelope to open it</p>
+                <button class="primary-button hidden" id="envelopeContinue" type="button" data-go="anniversary">
+                    Continue <span>→</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="section anniversary-section" id="anniversary" data-section>
+            <div class="section-inner celebration-inner">
+                <p class="eyebrow" id="anniversaryHeading"></p>
+                <div class="number-wrap">
+                    <span class="number-glow"></span>
+                    <strong id="daysNumber">0</strong>
+                </div>
+                <p class="anniversary-message" id="anniversaryMessage"></p>
+                <div class="orbit-line" aria-hidden="true"><span></span><span></span><span></span></div>
+                <button class="primary-button" type="button" data-go="memories">See the little moments <span>→</span></button>
+            </div>
+        </section>
+
+        <section class="section chat-memories-section" id="memories" data-section>
+            <div class="section-inner wide">
+                <div class="section-heading">
+                    <p class="eyebrow">Words worth keeping</p>
+                    <h2>Chat memories</h2>
+                </div>
+                <div class="chat-memories" id="chatMemories"></div>
+                <button class="primary-button" type="button" data-go="together-photo">One picture <span>→</span></button>
+            </div>
+        </section>
+
+        <section class="section together-photo-section" id="together-photo" data-section>
+            <div class="section-inner">
+                <p class="eyebrow">A moment held close</p>
+                <figure class="together-polaroid">
+                    <div class="polaroid-tape" aria-hidden="true"></div>
+                    <div class="together-photo-frame">
+                        <img id="togetherPhotoImage" src="images/us.jpg" alt="A picture of us together">
+                    </div>
+                    <figcaption id="togetherPhotoCaption">One picture, countless memories.</figcaption>
+                </figure>
+                <button class="primary-button" type="button" data-go="little-things">A few special things <span>→</span></button>
+            </div>
+        </section>
+
+        <section class="section little-things-section" id="little-things" data-section>
+            <div class="section-inner wide">
+                <div class="section-heading">
+                    <p class="eyebrow">One card at a time</p>
+                    <h2>A few things that stand out</h2>
+                </div>
+                <div class="things-grid" id="littleThingsGrid"></div>
+                <button class="primary-button" type="button" data-go="letter">Read a little letter <span>→</span></button>
+            </div>
+        </section>
+
+        <section class="section letter-section" id="letter" data-section>
+            <div class="section-inner">
+                <div class="letter-sheet">
+                    <p class="letter-kicker">A note for you</p>
+                    <h2>From the heart, simply.</h2>
+                    <div class="typed-letter" id="personalLetter" aria-live="polite"></div>
+                    <span class="letter-signature" id="letterSignature"></span>
+                </div>
+                <button class="primary-button" type="button" data-go="finale">One last surprise <span>→</span></button>
+            </div>
+        </section>
+
+        <section class="section finale-section" id="finale" data-section>
+            <div class="garden" id="garden" aria-hidden="true"></div>
+            <div class="section-inner finale-inner">
+                <p class="eyebrow">Still becoming beautiful memories</p>
+                <h2 id="finalMessage"></h2>
+                <button class="text-button" id="replayButton" type="button">Experience it once more ↻</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

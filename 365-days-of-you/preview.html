@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Website Preview</title>
+    <link rel="stylesheet" href="css/preview.css">
+</head>
+<body>
+    <header class="preview-header">
+        <div>
+            <p>PRIVATE LOCAL PREVIEW</p>
+            <h1>365 Days With You</h1>
+        </div>
+        <a href="index.html" target="_blank" rel="noopener">Open surprise website ↗</a>
+    </header>
+
+    <main>
+        <aside class="status-panel">
+            <h2>Asset check</h2>
+            <p>The public site is safe, but this preview should only be viewed locally.</p>
+            <div id="fileStatus" class="file-status"></div>
+        </aside>
+
+        <div class="preview-content">
+            <section class="preview-card recipient-card">
+                <p>Recipient</p>
+                <h2 id="previewRecipient"></h2>
+            </section>
+
+            <section class="preview-card">
+                <p>Messages</p>
+                <h2 id="previewTitle"></h2>
+                <blockquote id="previewIntroduction"></blockquote>
+                <h3>Envelope</h3>
+                <p id="previewEnvelope"></p>
+                <h3>Anniversary</h3>
+                <p id="previewAnniversary"></p>
+            </section>
+
+            <section class="preview-card">
+                <p>Personal letter</p>
+                <pre id="previewLetter"></pre>
+            </section>
+
+            <section class="preview-card">
+                <p>Chat memories</p>
+                <div id="previewChats" class="preview-chats"></div>
+            </section>
+
+            <section class="preview-card">
+                <p>Picture of us</p>
+                <div id="previewTogetherPhoto" class="preview-together-photo"></div>
+            </section>
+
+            <section class="preview-card">
+                <p>Little things</p>
+                <div id="previewThings" class="preview-things"></div>
+            </section>
+
+            <section class="preview-card">
+                <p>Final message</p>
+                <blockquote id="previewFinal"></blockquote>
+            </section>
+
+            <section class="preview-card instructions">
+                <p>How to edit</p>
+                <ol>
+                    <li>Open <code>js/config.js</code> in your editor.</li>
+                    <li>Change the placeholder name, messages, captions, and file names.</li>
+                    <li>Save the file, then refresh this page.</li>
+                    <li>Edit or add conversations inside <code>chatMemories</code>.</li>
+                    <li>Add music to the <code>music</code> folder when ready.</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/preview.js"></script>
+</body>
+</html>
