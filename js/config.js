@@ -73,9 +73,7 @@ I don't know how to explain how much these little moments mean to me, but I hope
 
 Here's to all the memories we've made in these 365 days and to many more beautiful moments waiting for us.
 
-Happy 1 year to us, Achu chelo!! 🥹🫶🏻]
-
-,
+Happy 1 year to us, Achu chelo!! 🥹🫶🏻]`,
 
     finalMessage: "Here's to more beautiful memories. Stay the same. You're pretty special. :)",
 
