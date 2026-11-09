@@ -75,9 +75,7 @@ Here's to all the memories we've made in these 365 days and to many more beautif
 
 Happy 1 year to us, Achu chelo!! 🥹🫶🏻]
 
-This space is reserved for a few words that feel a little more personal than the rest of the page.
-
-They can be honest, warm, and entirely your own.`,
+,
 
     finalMessage: "Here's to more beautiful memories. Stay the same. You're pretty special. :)",
 
